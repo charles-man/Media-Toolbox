@@ -1,0 +1,27 @@
+kind = "mobile"
+previewPath = "/"
+title = "Downloada Tool"
+version = "1.0.0"
+id = "artifacts/downloada-tool"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/" ]
+localPort = 22369
+
+[services.development]
+run = "pnpm --filter @workspace/downloada-tool run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/downloada-tool", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/downloada-tool", "run", "serve" ]
+
+[services.env]
+PORT = "22369"
+BASE_PATH = "/"

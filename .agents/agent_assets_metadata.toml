@@ -1,0 +1,8 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "0bNfSM0XsrVCmHHTd2Gwk"
+uri = "file://artifacts/downloada-tool/assets/images/icon.png"
+type = "image"
+title = "generated_image"

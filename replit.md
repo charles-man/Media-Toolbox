@@ -1,8 +1,24 @@
-# Workspace
+# Downloada Tool
 
 ## Overview
 
-pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
+"Downloada Tool" — a mobile video & audio toolkit built with Expo (React Native). pnpm workspace monorepo with TypeScript.
+
+## Artifacts
+
+- **Mobile app**: `artifacts/downloada-tool` — Expo app with 8 tools
+- **API Server**: `artifacts/api-server` — Express 5 backend (currently unused by mobile)
+
+## Mobile App Tools
+
+1. Video Downloader (YouTube, TikTok, etc.)
+2. Audio Extractor (MP3)
+3. Video Converter (MP3/MP4/AVI/MOV/WEBM/GIF)
+4. Video Cutter (trim start/end)
+5. Video Compressor
+6. Merge Videos
+7. Add Subtitles
+8. Thumbnail Downloader
 
 ## Stack
 
@@ -10,6 +26,7 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **Node.js version**: 24
 - **Package manager**: pnpm
 - **TypeScript version**: 5.9
+- **Mobile**: Expo Router, React Native, AsyncStorage
 - **API framework**: Express 5
 - **Database**: PostgreSQL + Drizzle ORM
 - **Validation**: Zod (`zod/v4`), `drizzle-zod`
