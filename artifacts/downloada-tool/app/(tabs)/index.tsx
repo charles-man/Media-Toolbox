@@ -10,6 +10,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useRouter } from "expo-router";
 import { useColors } from "@/hooks/useColors";
 import { ToolCard } from "@/components/ToolCard";
+import { PlatformLogos } from "@/components/PlatformLogos";
 
 const TOOLS = [
   {
@@ -113,9 +114,11 @@ export default function HomeScreen() {
       <View style={[styles.banner, { backgroundColor: colors.primary + "12", borderColor: colors.primary + "30" }]}>
         <Text style={[styles.bannerTitle, { color: colors.primary }]}>8 Powerful Tools</Text>
         <Text style={[styles.bannerDesc, { color: colors.mutedForeground }]}>
-          Download, convert, trim, compress and more
+          Download, convert, trim, compress and more — from 144p up to 4K
         </Text>
       </View>
+
+      <PlatformLogos title="DOWNLOAD FROM" />
 
       <Text style={[styles.sectionTitle, { color: colors.mutedForeground }]}>TOOLS</Text>
 
